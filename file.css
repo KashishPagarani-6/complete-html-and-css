@@ -1,4 +1,17 @@
-*{
-    padding: 0;
-    margin: 0;
+.just>.butn{
+    margin-left: 2px;
 }
+.search-input {
+  display: none;
+  margin-right: 10px; 
+}
+.search-container.active .search-input {
+  display: block;
+}
+.search-icon {
+  cursor: pointer;
+  margin-left: 10px;
+}
+.just>.butn {
+  margin-left: 2px;
+}                                     
