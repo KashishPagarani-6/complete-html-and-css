@@ -1,18 +1,87 @@
-.just>.butn{
-    margin-left: 2px;
+* {
+  padding: 0;
+  margin: 0;
 }
+
+.just>.butn {
+  margin-left: 2px;
+}
+
 .search-input {
   display: none;
-  margin-right: 10px; 
+  margin-right: 10px;
 }
+
 .search-container.active .search-input {
   display: block;
 }
+
 .search-icon {
   cursor: pointer;
   margin-left: 10px;
   width: 18px;
 }
+
 .just>.butn {
   margin-left: 2px;
-}                         
+}
+
+.heroCard {
+  height: 650px;
+  border: 2px solid black;
+}
+
+.bordr {
+  border: 2px solid blueviolet;
+  border-radius: 20px;
+}
+
+.align-centr {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.heroText>.fontType {
+  margin: 0;
+  padding: 0;
+}
+
+.fontType {
+  font-family: "DM Sans", sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+span {
+  color: #09B451;
+}
+
+.get-button {
+  border-radius: 5px;
+  padding: 12px 27px;
+  color: white;
+  font-weight: 600;
+  font-family: "DM Sans", sans-serif;
+  background-color: #09B451;
+}
+
+/* green line in background of hero section */
+.heroCard {
+  background:
+    /* Gradient for remaining area */
+    linear-gradient(to bottom,
+      rgba(255, 255, 255, 0.532),
+      #cfe4cf64
+      /* #5ea075  */
+    ),
+    /* Darker spot in bottom-left */
+    radial-gradient(circle at bottom left, rgba(137, 196, 137, 0.327), transparent 70%),
+    /* Your bar image (left side) */
+    url("./images/bgFrame.png");
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: top center, bottom left, right center;
+  background-size: cover, cover, contain;
+  border-radius: 50px;
+}
