@@ -27,12 +27,10 @@
 }
 
 .heroCard {
-  height: 650px;
-  border: 2px solid black;
+  height: auto;
 }
 
 .bordr {
-  border: 2px solid blueviolet;
   border-radius: 20px;
 }
 
@@ -84,4 +82,109 @@ span {
   background-position: top center, bottom left, right center;
   background-size: cover, cover, contain;
   border-radius: 50px;
+}
+.heroImage {
+  position: relative; /* container ko relative banaya */
+  width: 70%;
+  /* max-width: 1200px; */
+  margin: 0 auto;
+}
+
+.heroImage img {
+  width: 100%;
+  display: block;
+}
+
+.leftCard {
+  position: absolute;
+  top: 40%;     /* girl image ke upar set karne ke liye */
+  left: -20%;     /* left side pe */
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  max-width: 280px;
+}
+
+.leftCard p {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.leftCard span {
+  /* color: #ff6a00; */
+  font-weight: bold;
+}
+
+.profileRC {
+  display: flex;
+  margin-top: 12px;
+}
+
+.profileRC img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  margin-left: -10px;
+}
+
+.profileRC img:first-child {
+  margin-left: 0;
+}
+ .rightCard {
+  position: absolute;   /* so it stays on top of the girl image */
+  bottom: 50px;         /* adjust placement */
+  right: -10%;          /* adjust placement */
+  
+  width: 129px;
+  height: 146px;
+  
+  background: #fff;     /* optional: card background */
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 8px;
+}
+
+.rightCard img {
+  width: 24px;   /* smaller icon */
+  height: 24px;
+  margin-bottom: 6px;
+}
+
+.rightCard h1 {
+  font-size: 20px;  /* adjust font */
+  margin: 0;
+}
+
+.rightCard p {
+  font-size: 12px;  /* small text to fit */
+  margin: 4px 0 0 0;
+}
+.mainGirl{
+  border-radius: 30px;
+}
+.bord-green{
+  border: 2px solid #DDFFFF;
+  background-color: #DDFFFF;
+}
+.wid-hi{
+  width: 24px;
+  height: 24px;
+  align-items: center;
+}
+.radii-bg{
+  width: 35px;
+  height: 35px;
+  border-radius: 50px;
+  background-color: #09B451;
+}
+.cardss{
+  border-radius: 5px;
 }
