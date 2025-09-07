@@ -83,8 +83,10 @@ span {
   background-size: cover, cover, contain;
   border-radius: 50px;
 }
+
 .heroImage {
-  position: relative; /* container ko relative banaya */
+  position: relative;
+  /* container ko relative banaya */
   width: 70%;
   /* max-width: 1200px; */
   margin: 0 auto;
@@ -97,12 +99,14 @@ span {
 
 .leftCard {
   position: absolute;
-  top: 40%;     /* girl image ke upar set karne ke liye */
-  left: -20%;     /* left side pe */
+  top: 40%;
+  /* girl image ke upar set karne ke liye */
+  left: -20%;
+  /* left side pe */
   background: #fff;
   padding: 20px;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   max-width: 280px;
 }
 
@@ -132,17 +136,22 @@ span {
 .profileRC img:first-child {
   margin-left: 0;
 }
- .rightCard {
-  position: absolute;   /* so it stays on top of the girl image */
-  bottom: 50px;         /* adjust placement */
-  right: -10%;          /* adjust placement */
-  
+
+.rightCard {
+  position: absolute;
+  /* so it stays on top of the girl image */
+  bottom: 50px;
+  /* adjust placement */
+  right: -10%;
+  /* adjust placement */
+
   width: 129px;
   height: 146px;
-  
-  background: #fff;     /* optional: card background */
+
+  background: #fff;
+  /* optional: card background */
   border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 
   display: flex;
   flex-direction: column;
@@ -153,38 +162,186 @@ span {
 }
 
 .rightCard img {
-  width: 24px;   /* smaller icon */
+  width: 24px;
+  /* smaller icon */
   height: 24px;
   margin-bottom: 6px;
 }
 
 .rightCard h1 {
-  font-size: 20px;  /* adjust font */
+  font-size: 20px;
+  /* adjust font */
   margin: 0;
 }
 
 .rightCard p {
-  font-size: 12px;  /* small text to fit */
+  font-size: 12px;
+  /* small text to fit */
   margin: 4px 0 0 0;
 }
-.mainGirl{
+
+.mainGirl {
   border-radius: 30px;
 }
-.bord-green{
+
+.bord-green {
   border: 2px solid #DDFFFF;
   background-color: #DDFFFF;
 }
-.wid-hi{
+
+.wid-hi {
   width: 24px;
   height: 24px;
   align-items: center;
 }
-.radii-bg{
+
+.radii-bg {
   width: 35px;
   height: 35px;
   border-radius: 50px;
   background-color: #09B451;
 }
-.cardss{
+
+.cardss {
   border-radius: 5px;
+}
+
+/* selection section */
+.selection {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+  /* flex-wrap: wrap; */
+}
+
+.firstPara {
+  font-size: 32px;
+  font-weight: 600;
+  flex: 1;
+  /* baaki bachi jagah le */
+  min-width: 0;
+  /* allow wrapping */
+  word-break: break-word;
+  /* chhoti screen pe wrap hoga */
+}
+
+.secondPara {
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  /* kabhi break na ho */
+  flex-shrink: 0;
+  /* chhoti screen pe bhi squeeze na ho */
+}
+/* scroll view of courses */
+.courses-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 10px;
+  scroll-behavior: smooth;
+}
+
+.courses-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.courses-container::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.course-card {
+  min-width: 220px;
+  height: 280px;
+  border-radius: 12px;
+  background: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+}
+
+.marketing {
+  background-image: url(./images/marketing.png);
+  background-size: cover;
+  /* pura card cover kare */
+  background-position: center;
+  /* beech me image ho */
+  background-repeat: no-repeat;
+  /* repeat na ho */
+}
+
+.programming {
+  background-image: url(./images/programming.jpeg);
+  background-size: cover;
+  /* pura card cover kare */
+  background-position: center;
+  /* beech me image ho */
+  background-repeat: no-repeat;
+  /* repeat na ho */
+}
+
+.design {
+  background-image: url(./images/designing.jpeg);
+}
+
+.technology {
+  background-image: url(./images/technology.jpg);
+  background-size: cover;
+  /* pura card cover kare */
+  background-position: center;
+  /* beech me image ho */
+  background-repeat: no-repeat;
+  /* repeat na ho */
+}
+
+.photography {
+  background-image: url(./images/photography.webp);
+  background-size: cover;
+  /* pura card cover kare */
+  background-position: right;
+  /* beech me image ho */
+  background-repeat: no-repeat;
+  /* repeat na ho */
+}
+
+.freelancing {
+  background-image: url(./images/freelancing.jpeg);
+  background-size: cover;
+  /* pura card cover kare */
+  background-position: bottom;
+  /* beech me image ho */
+  background-repeat: no-repeat;
+  /* repeat na ho */
+}
+.analysis {
+  background-image: url(./images/analysis.png);
+  background-size: cover;
+  /* pura card cover kare */
+  background-position: center;
+  /* beech me image ho */
+  background-repeat: no-repeat;
+  /* repeat na ho */
+}
+.ai {
+  background-image: url(./images/a_i.jpeg);
+  background-size: cover;
+  /* pura card cover kare */
+  background-position: center;
+  /* beech me image ho */
+  background-repeat: no-repeat;
+  /* repeat na ho */
+}
+/* to remove the scroll bar */
+.courses-container::-webkit-scrollbar {
+  display: none; /* Chrome/Edge */
+}
+.courses-container {
+  scrollbar-width: none; /* Firefox */
 }
