@@ -235,6 +235,7 @@ span {
   flex-shrink: 0;
   /* chhoti screen pe bhi squeeze na ho */
 }
+
 /* scroll view of courses */
 .courses-container {
   display: flex;
@@ -320,6 +321,7 @@ span {
   background-repeat: no-repeat;
   /* repeat na ho */
 }
+
 .analysis {
   background-image: url(./images/analysis.png);
   background-size: cover;
@@ -329,6 +331,7 @@ span {
   background-repeat: no-repeat;
   /* repeat na ho */
 }
+
 .ai {
   background-image: url(./images/a_i.jpeg);
   background-size: cover;
@@ -338,10 +341,253 @@ span {
   background-repeat: no-repeat;
   /* repeat na ho */
 }
+
 /* to remove the scroll bar */
 .courses-container::-webkit-scrollbar {
-  display: none; /* Chrome/Edge */
+  display: none;
+  /* Chrome/Edge */
 }
+
 .courses-container {
-  scrollbar-width: none; /* Firefox */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+/* choice of courses containing dropdown */
+.choiceContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.choiceText {
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 32px;
+}
+
+.butn {
+  background-color: #09B451;
+  border-radius: 50px;
+  color: white;
+}
+
+/* cards of choices */
+.uppderData {
+  display: flex;
+  justify-content: space-between;
+  gap: 1px;
+}
+
+.part1 {
+  font-weight: 500;
+  font-size: 24px;
+  text-transform: capitalize;
+  text-align: left;
+}
+
+.partNum {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.partimg>img {
+  width: 18px;
+  height: 18px;
+}
+
+.part2 {
+  display: flex;
+  align-items: center;
+}
+
+.lowerData {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lDS {
+  display: flex;
+}
+
+.fDS-img>img {
+  background-color: #09B451;
+  height: 16px;
+  width: 16px;
+}
+
+.fDF-text {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.lDT {
+  color: #09B451;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.lDF {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.choice_card .card {
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.choice_card>img {
+  height: 215px;
+  width: 391px;
+}
+
+.choice_card .card {
+  width: 100%;
+  max-width: 390px;
+  height: 405px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: auto 0;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.card-img-top {
+  height: 215px;
+  object-fit: cover;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+/* skills */
+.text-trans {
+  text-transform: capitalize;
+  color: black;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.desktop-text {
+  display: inline;
+}
+
+.mobile-text {
+  display: none;
+}
+
+/* horizontal scroll view  */
+/* .slider-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.cards-wrapper {
+  gap: 15px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+.cards-wrapper::-webkit-scrollbar { */
+/* display: none; scrollbar hata diya */
+/* } */
+/* .left-btn, .right-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background: #09B451;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+}
+.left-btn { left: -20px; }
+.right-btn { right: -20px; } */
+/* side by side section  */
+.sideSection {
+  position: relative;
+  display: inline-block;
+  width: 430px;
+  height: 461px;
+}
+
+.sideSection img.College {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.rightCard {
+  position: absolute;
+  bottom: 20%;
+  left: 95%;
+  transform: translateX(-50%);
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 6.8px 6.8px 17.2px 6.8px;
+}
+
+.education {
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 32px;
+}
+
+.collegeGirl {
+  border-radius: 28.9px 28.9px 72.3px 28.9px;
+}
+
+/* right section  */
+.itemImg {
+  background-color: #DDFFFF;
+  width: 40px;
+  height: 40px;
+  border-radius: 30px;
+  display: grid;
+  place-items: center;
+}
+
+.listItem {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.rightSection>h1 {
+  text-transform: capitalize;
+  font-size: 48px;
+}
+
+.listText {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.sideBy {
+  display: flex;
+  gap: 120px;
+}
+
+@media (max-width: 768px) {
+  .desktop-text {
+    display: none;
+  }
+
+  .mobile-text {
+    display: inline;
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .sideBy {
+    display: block;     
+  }
+  .brTag{
+    display: none;
+  }
 }
